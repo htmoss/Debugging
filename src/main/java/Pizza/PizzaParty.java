@@ -58,6 +58,7 @@ public class PizzaParty {
 
     private void countCalories() {
         for (Guest guest : guests){
+            System.out.println("guest calories: "+guest.consumedCalories);
             consumedCalories += guest.consumedCalories;
         }
     }
