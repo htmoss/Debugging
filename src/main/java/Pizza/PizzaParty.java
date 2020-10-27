@@ -37,6 +37,7 @@ public class PizzaParty {
 
         //order and slice Pizza
         pizza = new Pizza(pizzaTopping);
+        System.out.println("pizza cals: "+ pizza.calories);
         pizza.slice(nrOfGuests);
     }
 
@@ -44,7 +45,9 @@ public class PizzaParty {
         //eat pizza and drink beer
         for (Guest guest : guests){
             guest.takeSlice(pizza);
-            guest.drink(beers);
+            while(beers.size() > 0){
+                guest.drink(beers);
+            }
         }
 
         //give special birthday shot to host
@@ -57,9 +60,11 @@ public class PizzaParty {
     }
 
     private void countCalories() {
+        double consCalDouble = 0.0;
         for (Guest guest : guests){
             System.out.println("guest calories: "+guest.consumedCalories);
-            consumedCalories += guest.consumedCalories;
+            consCalDouble += guest.consumedCalories;
         }
+        consumedCalories += consCalDouble;
     }
 }

@@ -14,6 +14,7 @@ public class Guest {
     }
 
     public void consume(double calories){
+        System.out.println("consuming "+calories+" calories");
        consumedCalories += calories;
     }
 

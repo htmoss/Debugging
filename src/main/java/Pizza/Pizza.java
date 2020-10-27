@@ -17,7 +17,7 @@ public class Pizza {
     public void slice(int nrOfSlices){
         slices = new Stack();
         for (int i = 0;i < nrOfSlices; i++){
-            slices.push(new Slice(calories/nrOfSlices));
+            slices.push(new Slice(calories/(double)nrOfSlices));
         }
     }
 }

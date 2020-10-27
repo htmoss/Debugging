@@ -18,7 +18,6 @@ public class Tests {
     public void test2(){
         PizzaParty party = new PizzaParty(4,Topping.SALAMI,4);
         party.startTheFeast();
-        System.out.println("consumed: "+ party.consumedCalories + ", provided: "+ party.providedCalories);
         Assert.assertTrue(party.consumedCalories == party.providedCalories);
     }
 
