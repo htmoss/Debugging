@@ -8,9 +8,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * User: sameer
- * Date: 16/05/2013
- * Time: 11:01
+ * User: sameer Date: 16/05/2013 Time: 11:01
  */
 public class MeetingsSchedule {
 
@@ -20,10 +18,11 @@ public class MeetingsSchedule {
 
     private Map<LocalDate, Set<Meeting>> meetings;
 
-    public MeetingsSchedule(LocalTime officeStartTime, LocalTime officeFinishTime, Map<LocalDate, Set<Meeting>> meetings) {
-        officeStartTime = officeStartTime;
-        officeFinishTime = officeFinishTime;
-        meetings = meetings;
+    public MeetingsSchedule(LocalTime officeStartTime, LocalTime officeFinishTime,
+            Map<LocalDate, Set<Meeting>> meetings) {
+        this.officeStartTime = officeStartTime;
+        this.officeFinishTime = officeFinishTime;
+        this.meetings = meetings;
     }
 
     public LocalTime getOfficeStartTime() {

@@ -9,9 +9,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 /**
- * User: sameer
- * Date: 16/05/2013
- * Time: 14:09
+ * User: sameer Date: 16/05/2013 Time: 14:09
  */
 public class MeetingSchedulePrinter {
 
@@ -26,7 +24,6 @@ public class MeetingSchedulePrinter {
 
     public String print(String meetingRequest) {
         MeetingsSchedule meetingsScheduleBooked = meetingScheduler.schedule(meetingRequest);
-
         return buildMeetingScheduleString(meetingsScheduleBooked);
 
     }
